@@ -1,0 +1,134 @@
+/* Main Cart Container */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cart Header */
+.cart-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3c009d;
+}
+
+/* Cart Item List */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+/* Cart Item Image and Info */
+.cart-item img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-info {
+  margin-left: 16px;
+}
+
+.cart-item-info h3 {
+  font-weight: 600;
+  color: #3c009d;
+}
+
+.cart-item-info p {
+  color: #797979;
+  font-size: 14px;
+}
+
+/* Remove Button */
+.remove-btn {
+  color: #e53e3e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.remove-btn:hover {
+  color: #9b2c2c;
+}
+
+/* Total Price Section */
+.total-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+}
+
+.total-section .total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3c009d;
+}
+
+/* Checkout Button */
+.checkout-btn {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #4c00b4;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.checkout-btn:hover {
+  background-color: #3c009d;
+}
+
+.checkout-btn:disabled {
+  background-color: #eaeaea;
+  color: #676767;
+  cursor: not-allowed;
+}
+
+/* Empty Cart Message */
+.empty-cart {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.empty-cart h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3c009d;
+}
+
+.empty-cart button {
+  background-color: #4c00b4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.empty-cart button:hover {
+  background-color: #3c009d;
+}

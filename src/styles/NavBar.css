@@ -1,0 +1,142 @@
+/* General styling for the navbar */
+nav {
+  background: linear-gradient(
+    90deg,
+    #4c00b4,
+    #3c009d
+  ); /* Darker gradient for a sleek look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; /* Rounded corners */
+  transition: all 0.3s ease-in-out;
+  margin: 20px; /* Adds space around the navbar */
+  padding: 10px 20px;
+}
+
+/* Navbar container styling */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  max-width: 1000px; /* Limit max width for more control */
+  margin: auto;
+}
+
+/* Logo style */
+.branding {
+  font-size: 1.5rem; /* Slightly bigger font */
+  font-weight: 700;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.branding:hover {
+  color: #fbbf24; /* Light yellow on hover */
+}
+
+/* Right-side items (links and buttons) styling */
+.navbar-items {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Slightly more gap for a balanced look */
+}
+
+/* Styling for links */
+.navbar-items a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 1.1rem; /* Slightly bigger font */
+  font-weight: 500;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent; /* Smooth bottom border */
+}
+
+.navbar-items a:hover {
+  color: #fbbf24;
+  transform: translateY(-3px);
+  border-bottom: 2px solid #fbbf24; /* Underline effect */
+}
+
+/* Styling for the sign-out button */
+.sign-out-btn {
+  background-color: transparent;
+  border: none;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 30px; /* Rounded button */
+  transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sign-out-btn:hover {
+  color: #fff;
+  background-color: #fbbf24; /* Hover effect */
+  transform: translateY(-3px);
+}
+
+/* Cart icon container styling */
+.cart-icon {
+  position: relative;
+  padding: 10px;
+  font-size: 1.25rem;
+  color: #e5e7eb;
+  transition: color 0.3s ease;
+  border-radius: 50%;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+}
+
+.cart-icon:hover {
+  color: #fbbf24;
+  border-color: #fbbf24; /* Border change on hover */
+}
+
+/* Badge for cart items */
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #f87171;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  animation: cartBadgeAnimation 0.5s ease-in-out;
+}
+
+/* Animation for the cart badge */
+@keyframes cartBadgeAnimation {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animation for the navbar when the page is loaded */
+@keyframes navbarFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav {
+  animation: navbarFadeIn 0.8s ease-out;
+}
